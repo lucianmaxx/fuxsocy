@@ -1,7 +1,6 @@
 import base64
 import hashlib
 from aes import *
-from Crypto.Protocol.KDF import PBKDF2
 import string , random , sys
 from sys import platform
 import os
