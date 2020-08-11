@@ -57,9 +57,6 @@ def add_round_key(s, k):
             s[i][j] ^= k[i][j]
 
 
-xtime = lambda a: (((a << 1) ^ 0x1B) & 0xFF) if (a & 0x80) else (a << 1)
-
-
 def mix_columns(state):
     exp1 = CONFIG["global"]["exp1"].split(',')
     exp2 = CONFIG["global"]["exp2"].split(',')
